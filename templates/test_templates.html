@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tst_templates</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&family=Oi&family=Pattaya&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" 
+    href="C:\Users\QWERTY\Desktop\sait\css_style.css">
+
+       
+</head>
+<body>
+
+<!--nav-bar and ofcanvas--> 
+<div class="container-fluid">
+
+    <!-- nav-bar -->     
+    <nav class="navbar navbar-expand-sm fixed-top  bg-body-tertiary   ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="btn btn-outline-dark " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            боковая навигация
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>   
+                </ul>                   
+            </div>
+        </div>
+    </nav>
+
+    <!--ofcanvas-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>  
+        <div class="offcanvas-body">
+            <div>
+                Какой-то текст в качестве заполнителя. В реальной жизни у вас могут быть элементы, которые Вы выбрали. Нравится, текст, изображения, списки и т. д.
+            </div>
+        <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Кнопка раскрывающегося списка
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Действие</a></li>
+                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+            </ul>
+        </div>
+    </div> 
+</div>
+
+<!-- main -->
+
+<!--header and carousel-->
+<div class="container-fluid content_2">
+    <!--header-->
+    <div class="container-fluid ">       
+        <h1 class="text-center header_style "> заголовок сайта </h1>
+        <hr>
+    </div>
+    <!--carousel-->
+    <div class="row row_style">
+        <div class="col-xs-12 col-md-1 col-lg-2 col-xl-3 ">
+
+        </div>
+
+        <div class="col-xs-0 col-md-10 col-lg-8 col-xl-6 carousel_style">
+            <div id="carouselExampleCaptions" class="carousel slide  ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="C:\Users\QWERTY\Desktop\sait\img_carousel\IMG_3354_1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="C:\Users\QWERTY\Desktop\sait\img_carousel\IMG_3356_1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="C:\Users\QWERTY\Desktop\sait\img_carousel\IMG_3358_2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-xs-0 col-md-1 col-lg-2 col-xl-3 ">
+
+        </div>    
+    </div>
+</div>    
+
+<!--card-->
+<div class="container-fluid mt-5">
+    <div class="row  ">
+        <div class="col-xs-12 col-md-6 col-lg-4 card_style ">    
+            <div class="card d-block mx-auto mb-5 " style="width: 18rem;">
+                <img src="C:\Users\QWERTY\Desktop\sait\img_carousel\IMG_3354_1.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body ">
+                    <h5 class="card-title card_title_style">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 card_style ">           
+            <div class="card d-block mx-auto  mb-5 " style="width: 18rem;">
+                <img src="C:\Users\QWERTY\Desktop\sait\img_carousel\IMG_3356_1.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title card_title_style">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>      
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4 card_style ">           
+            <div class="card d-block mx-auto mb-5 " style="width: 18rem;">
+                <img src="C:\Users\QWERTY\Desktop\sait\img_carousel\IMG_3358_2.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title card_title_style">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+<!-- paginator -->
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item ">
+            <a class="page-link" href="#">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+
+<!-- futer -->
+<div>
+    
+</div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
